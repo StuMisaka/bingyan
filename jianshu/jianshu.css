@@ -1,0 +1,192 @@
+body{
+    margin: 0px;
+}
+
+.totalbox{
+    display:flex;
+    flex-flow:row wrap;
+    font-weight:bold;
+    text-align:center;
+}
+/*.totalbox > *{
+    padding:10px;
+    flex:1 100%;
+}*/
+
+.header{
+    background:#ffffff;
+    border-bottom: 0.5px solid #8B8989;
+    /*作子元素时的样式*/
+    flex:1 1 100% ;
+    height: 55px;
+    /*作父元素时的样式*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items:stretch；
+}
+
+.headtitle01{
+    color: #FF4040;
+    order: 1;
+    flex-grow: 3;
+    padding-top: 8px;
+    font-size: 30px;
+}
+.headtitle02{
+    /*作子元素的样式*/
+    order: 2;
+    flex-grow: 4;
+    /*作父元素的样式*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items:stretch；
+
+}
+.indexbutton{
+    /*作子元素的样式*/
+    flex-grow: 1;
+    color: #FF4040;
+    font-size: 20px;
+    padding-top: 12px;
+
+}
+.downloadbutton{
+    /*作子元素的样式*/
+    flex-grow: 1;
+    color: black;
+    font-size: 20px;
+    padding-top: 12px;
+}
+.searchbutton{
+    /*作子元素的样式*/
+    flex-grow: 4;
+    background-color: gray;
+
+}
+.headtitle03{
+    /*作子元素的样式*/
+    order: 3;
+    flex-grow: 5;
+    /*作父元素的样式*/
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.blankbox01{
+    flex-flow: 1;
+    flex-basis: 260px;
+    flex-shrink: 0;
+    background-color: yellow;
+}
+    
+
+.typebutton{
+    font-size:20px;
+    flex-flow: 1;
+    flex-basis: 80px;
+    flex-shrink: 0;
+    background-color: purple;
+
+}
+.signinbutton{
+    flex-flow: 1;
+    font-size: 20px;
+    flex-basis: 80px;
+    flex-shrink: 0;
+    background-color: red;
+    color: gray;
+
+}
+.registbutton{
+    flex-flow: 1;
+    font-size: 20px;
+    color: #FF4040;
+    flex-basis: 80px;
+    flex-shrink: 0;
+    
+
+}
+.startwritebutton{
+    flex-flow: 2;
+    font-size: 20px;
+    color: gray;
+    flex-basis: 120px;
+    flex-shrink: 0;
+}
+.blankbox02{
+    flex-flow: 3;
+    flex-basis: 380px;
+    flex-shrink: 1;
+}
+
+
+.footer{
+    background:lightgreen;
+    flex:1 1 100% ;
+    height: 50px;
+}
+
+.main{
+    text-align:left;
+    background:gray;
+    flex:1 1 100% ;
+    height: 1000px;
+}
+.aside1{
+    flex:1 1 100%;
+}
+.aside2{
+    background:hotpink;
+    flex:1 1 100%;
+}
+.aside3{
+    background: green;
+    flex:1 1 100%;
+}
+/*@media all and (min-width:600px){
+    .aside1{
+        flex:1 1 auto;
+    }
+    .aside2{
+        flex:1 1 auto;
+    }
+}*/
+@media all and (min-width:600px){
+    .aside1{
+        flex:1 1 0;
+    }
+    .main{
+        flex:0 1 420px;
+    }
+    .aside2{
+        flex:0 1 180px;
+    }
+    .aside3{
+        flex:1 1 0;
+    }
+}
+
+@media all and (min-width:1000px){
+    .main{
+        flex:0 1 650px ;
+        order:2;
+    }
+    .aside1{
+        flex:1 1 0px ;
+        order:1;
+    }
+    .aside2{
+        flex:0 1 350px ;
+        order:3;
+    }
+    .aside3{
+        flex:1 1 0px;
+        order: 4;
+    }
+    .footer{
+        order:5;
+    }
+}
