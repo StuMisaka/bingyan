@@ -1,0 +1,483 @@
+body{
+  margin: 0px;
+}
+
+
+.totalbox{
+  display:flex;
+  flex-flow:row wrap;
+  font-weight:bold;
+  text-align:center;
+}
+/*.totalbox > *{
+  padding:10px;
+  flex:1 100%;
+}*/
+
+.header{
+  background:#ffffff;
+  border-bottom: 0.5px solid #EEEEE0;
+  /*作子元素时的样式*/
+  flex:1 1 100% ;
+  height: 55px;
+  /*作父元素时的样式*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-between;
+  align-items:stretch；
+}
+
+.headtitle01{
+  color: #FF4040;
+  order: 1;
+  flex:1 1 270px;
+  padding-top: 8px;
+  font-size: 30px;
+}
+.headtitle02{
+  /*作子元素的样式*/
+  order: 2;
+  flex:1 1 450px;
+  /*作父元素的样式*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items:stretch；
+
+}
+.indexbutton{
+  /*作子元素的样式*/
+  flex:0 0 12px;
+  color: #FF4040;
+  font-size: 18px;
+  font-weight: 350;
+  padding-top: 20px;
+  margin-right: 35px;
+  text-align: start;
+  overflow: hidden;
+
+}
+.downloadbutton{
+  /*作子元素的样式*/
+  flex:0 0 12px;
+  color: black;
+  font-size: 18px;
+  font-weight: 350;
+  margin-right: 35px;
+  padding-top: 20px;
+  text-align: start;
+  overflow: hidden;
+}
+.searchbutton{
+  /*作子元素的样式*/
+  flex:1 1 220px;
+  text-align: start;
+
+}
+.leftsemi{
+  height: 40px;
+  width: 20px;
+  margin: 8px 0 0px 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius: 20px;
+  background-color: #EEEEE0; 
+  float: left;
+}
+.inputcontrol{
+  margin: 8px 0 0px 0px;
+  width: 55%;
+  height: 40px;
+  background-color: #EEEEE0;
+  border: 0px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 0px;
+  color: #8B8386;
+  float: left;
+}
+.rightsemi{
+  box-sizing:border-box;
+  height: 40px;
+  width: 20px;
+  margin: 8px 0 0px 0px;
+  padding: 8px 0px 0px 0px;;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px;
+  border-bottom-left-radius: 0px;
+  background-color: #EEEEE0; 
+  float: left;
+  font-size: 18px;
+  color: #8B8386;
+}
+.rightsemi i:hover{
+cursor: pointer;
+}
+.headtitle03{
+  /*作子元素的样式*/
+  order: 3;
+  flex:1 1 600px;
+  /*作父元素的样式*/
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.blankbox01{
+  flex: 1 1 260px;
+  background-color: white;
+}
+  
+
+.typebutton{
+  flex: 0 0 80px;
+  font-size:20px;
+  font-weight: 400;
+  color: gray;
+  padding-top: 12px;
+}
+.signinbutton{
+  flex: 0 0 70px;
+  font-size: 16px;
+  font-weight: 400;
+  padding:5px 0 5px 0;
+  margin: 10px 0 10px 0;
+  color: gray;
+
+}
+.registbutton{
+  flex:0 0 70px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 0 5px 0;
+  margin: 10px 0 10px 0;
+  color: #FF4040;
+  border: 0.5px solid #FF4040;
+  border-radius: 25px;
+  
+
+}
+.startwritebutton{
+  flex: 0 0 90px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 12px;
+  padding: 5px 0 5px 0;
+  margin: 10px 20px 10px 20px;
+  color: white;
+  background-color: #FF4040;
+  border-radius: 25px;
+}
+.typebutton,.signinbutton,.registbutton,.startwritebutton:hover{
+  cursor: pointer;
+}
+.blankbox02{
+  flex-grow: 1;
+  flex-basis: 380px;
+  flex-shrink: 1;
+}
+
+
+.footer{
+  background:lightgreen;
+  flex:1 1 100% ;
+  height: 50px;
+}
+
+.main{
+  /*作子元素时的样式*/
+  flex:1 1 100% ;
+  height: 2000px;
+  /*作父元素时的样式*/
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: flex-start;
+  align-items:stretch;
+}
+.slideshow{
+  border-bottom: 0.5px solid #EEEEE0;
+  position: relative;
+  margin: 35px 25px 35px 25px;
+  width: 600px;
+  /*margin:0 auto 0 auto;*/
+  overflow: hidden;
+  /*作子元素时的样式*/
+  flex:0 0 260px;
+  z-index: 0;
+}
+.wrap {
+  /*margin: 25px 0 25px 0;*/
+  margin: 0;
+  /*background-color: black;*/
+  position: absolute;
+  width: 30000px;
+  height: 260px;
+  z-index: 1;
+}
+/*轮播图长600，高260px*/
+.slideshow .wrap img {
+  float: left;
+  width: 600px;
+  height: 260px;
+}
+.slideshow .buttons {
+  position: absolute;
+  right: 150px;
+  bottom:20px;
+  width: 100px;
+  height: 10px;
+  z-index: 2;
+}
+.slideshow .buttons span {
+  margin-left: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  text-align: center;
+  color:white;
+  cursor: pointer;
+}
+.slideshow .buttons span.on{
+  background-color: red;
+}
+.slideshow .arrow {
+  position: absolute;
+  width: 35px;
+  height: 50px;
+  top: 42%;
+  color: white;
+  padding-top:15px;
+  background-color: rgba(131,139,139,0.5);
+  border-radius: 5px 0px 0px 5px;
+  font-size: 35px;
+  z-index: 2;
+  display: none;
+}
+.slideshow .arrow_left {
+  left: 0px;
+}
+.slideshow .arrow_right {
+  right: 0px;
+}
+.slideshow:hover .arrow  {
+  display: block;
+}
+.slideshow .arrow:hover{
+  cursor: pointer;
+}
+
+
+.articlelabel{
+  flex:0 0 150px;
+  margin: 0px 25px 0px 25px;
+  border-top: 1px solid #EEEEE0;
+}
+.articleword{
+  width: 430px;
+  height: 151px;
+  float: left;
+  margin: 0px;
+}
+.articlelabel h2{
+  width: 430px;
+  font-size: 18px;
+  margin:25px 0px 0px 0px;
+  text-align: start;
+}
+.articlelabel p{
+  width: 430px;
+  font-size: 14px;
+  color: #CDC5BF;
+  font-weight: 300;
+  text-align: start;
+  margin: 14px 0px 14px 0px;
+}
+.articlelabel h5{
+  font-size: 14px;
+  color: #CDC5BF;
+  font-weight: 300;
+  text-align: start;
+  margin: 14px 0px 14px 0px;
+}
+.articlelabel img{
+  width: 150px;
+  border-radius: 3px;
+  float: left;
+  margin: 40px 0 0 20px;
+}
+
+
+.aside1{
+  flex:1 1 100%;
+}
+.aside2{
+  /*作子元素时的样式*/
+  flex:1 1 100%;
+  /*作父元素的样式*/
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.pagelink{
+  flex:0 0 360px;
+  margin-top: 30px;
+}
+
+.pagelink img{
+  width: 300px;
+  height: auto;
+  margin:3px 0px 3px 0;
+}
+.pagelink img:hover{
+  cursor: pointer;
+}
+.qrlink{
+  flex: 0 0 75px;
+  width: 300px; 
+  margin: 10px auto 10px auto;
+  border: 0.5px solid #EEEEE0;
+}
+.qrlink img{
+  height: 60px;
+  width: auto;
+  margin: 7.5px 0px 7.5px 15px;
+  float: left;
+}
+.qrlink h3{
+  font-size: 15px;
+  font-weight: 400;
+  float: left;
+  margin: 15px 0px 0px 5px ;
+}
+.qrlink p{
+  font-size: 12px;
+  font-weight: 200;
+  float: left;
+  margin:5px 0px 0px 5px;
+  color:#C1CDC1;
+}
+.adlink{
+  flex: 0 0 170px;
+
+}
+.adlink img{
+  margin-top:20px;
+  height: 170px;
+  width: 300px;
+  border-radius: 5px
+}
+.writerlink{
+  flex: 0 0 450px;
+}
+.writertitle{
+  font-size: 15px;
+  font-weight: 500;
+  color: #C1CDC1;
+  float: left;
+  margin: 20px 190px 15px 25px;
+}
+.changetitle{
+  font-size: 15px;
+  font-weight: 500;
+  color: #C1CDC1;
+  float: right;
+  margin: 20px 25px 15px 0;
+}
+.changetitle:hover{
+  cursor: pointer;
+}
+.writerlink img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin: 5px 0px 10px 15px; 
+}
+
+.writerlink h4{
+  font-size: 14px;
+  font-weight: 400;
+  float: left;
+  margin: 10px 100px 0px 5px;
+}
+.writerlink h3{
+  font-size: 14px;
+  font-weight: 400;
+  float: right;
+  color: #76EE00;
+  margin: 10px 25px 0 0;
+}
+.writerlink h3:hover{
+  cursor: pointer;
+}
+.writerlink p{
+  font-size: 12px;
+  font-weight: 200;
+  float: left;
+  margin: 5px 100px 20px 0px;
+}
+.checkallbutton{
+  float: left;
+  width: 300px;
+  height: 30px;
+  margin: 0 0 0 23px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 3px auto 3px auto;
+  background-color:#FFFFF0;
+  border: 0.5px solid #EEEEE0;
+  color: #C1CDC1;
+}
+.checkallbutton:hover{
+  cursor: pointer;
+}
+
+/*@media all and (min-width:600px){
+  .aside1{
+      flex:1 1 auto;
+  }
+  .aside2{
+      flex:1 1 auto;
+  }
+}*/
+/*@media all and (min-width:600px){
+  .aside1{
+      flex:1 1 0;
+  }
+  .main{
+      flex:0 1 420px;
+  }
+  .aside2{
+      flex:0 1 180px;
+  }
+  .aside3{
+      flex:1 1 0;
+  }
+}*/
+
+.aside1{
+  flex:1 1 0px ;
+  order:1;
+}
+.main{
+  flex:0 0 65% ;
+  order:2;
+}
+.aside2{
+  flex:0 0 25% ;
+  order:3;
+}
+.aside3{
+  flex:1 1 0px;
+  order: 4;
+}
+.footer{
+  order:5;
+}
+
+

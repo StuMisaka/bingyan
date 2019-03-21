@@ -1,211 +1,250 @@
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="jianshu.css"  type="text/css" >
-    <script type="text/javascript" src="jianshu.js"> </script>
-    <title>简书，创作你的创作</title>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel = "stylesheet" media = "all and (min-width:1025px)" href="jianshu.css" type="text/css">
+  <link rel = "stylesheet" media = "all and (min-width:768px) and (max-width:1024px)" href="jianshunarrow.css" type = "text/css" >
+	<link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<title>简书，创作你的创作</title>
 
 </head>
+
 <body>
-    <div class="totalbox">
-        <header class="header">
-            <div class="headtitle01">简书</div>
-            <div class="headtitle02">
-                <div class="indexbutton"><!--首页-->
-                    首页
-                </div>
-                <div class="downloadbutton"><!--下载-->
-                    下载App
-                </div>
-                <div class="searchbutton"><!--搜索-->
-                    搜索栏（占位）
+	<div class="totalbox">
+		<header class="header">
+			<div class="headtitle01" id="pagetitle">简书</div>
+			<div class="headtitle02">
+				<div class="indexbutton">
+					<!--首页-->
+					<i class="fas fa-file"></i>&nbsp&nbsp首页
+				</div>
+				<div class="downloadbutton">
+					<!--下载-->
+					<i class="fas fa-mobile-alt"></i>&nbsp&nbsp下载App
+				</div>
+				<div class="searchbutton">
+					<!--搜索-->
+					<div class="leftsemi"></div>
+					<!--左侧半圆-->
+					<input type="text" class="inputcontrol" value="搜索">
+					<div class="rightsemi"><i class="fas fa-search"></i></div>
+					<!--右侧半圆-->
+				</div>
+			</div>
+			<div class="headtitle03">
+				<div class="blankbox01">
+					<!--占位空盒子-->
+				</div>
+				<div class="typebutton">
+					<!--模式按钮-->
+					Aa
+				</div>
+				<div class="signinbutton">
+					<!--登录-->
+					登录
+				</div>
+				<div class="registbutton">
+					<!--注册-->
+					注册
+				</div>
+				<div class="startwritebutton">
+					<!--写文章-->
+					<i class="fas fa-pencil-alt"></i>&nbsp写文章
+				</div>
+				<div class="blankbox02">
+					<!--占位空盒子-->
 
-                </div>
-            </div>
-            <div class="headtitle03">
-                <div class="blankbox01"><!--占位空盒子-->
-                    占位
-                </div>
-                <div class="typebutton"><!--模式按钮-->
-                    Aa
-                </div>
-                <div class="signinbutton"><!--登录-->
-                    登录
-                </div>
-                <div class="registbutton"><!--注册-->
-                    注册
-                </div>
-                <div class="startwritebutton"><!--写文章-->
-                    写文章
-                </div>
-                <div class="blankbox02"><!--占位空盒子-->
+				</div>
+			</div>
+		</header>
+		<article class="main">
+			<!--中央主要文章区-->
+			<div class="slideshow">
+				<!--轮播图预留-->
+				<div class="wrap" style="left:-600px;">
+					<img src="images/lunbo001.jpg" alt="">
+					<img src="images/lunbo002.png" alt="">
+					<img src="images/lunbo003.jpg" alt="">
+				</div>
+				<div class="buttons">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="arrow arrow_left" id="arrowleft">
+            <i class="fas fa-angle-left"></i>
+        </div>
+        <div class="arrow arrow_right" id="arrowright">
+            <i class="fas fa-angle-right"></i>
+				</div>
+			</div>
+			<!--文章模块-->
+			<div class="articlelabel">
+				<h2>2019最虐心伤感的爱情句子，刺心入骨</h2>
+				<h5>1.你从不拒绝我也不让我离开，又不叫我留下来，你仗着我爱你，你还想怎样，
+					你说谎瞒不过我，你诚实我又难过，进退两难。 2.成熟不是为了走向复杂，....</p>
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>面粉就爱这么吃，不揉面不发面，做法特简单，每周必吃2次才解馋</h2>
+					<p>自从来到南方，虽然吃面食越来越少，但是每次嘴馋也能自己做上一回，吃个痛快。
+						我家的孩子就特别的喜欢吃这个，每周必吃两回，如果你想一天赚几千几百，下...</p>
+				</div>
+				<img src="images/articlepic.jpg">
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>4款非常黑科技的APP，各个都很良心，请大家低调使用</h2>
+					<p>手机是大家经常使用的工具，特别是安卓手机可玩性非常高，今天分享4款非常黑科技的APP，
+						各个都很良心，请大家一定要低调使用。 1、Gif 助手 G...</p>
+				</div>
+				<img src="images/articlepic2.jpg">
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>如何做笔记？</h2>
+					<p>为什么要记笔记？记了很多年的笔记，从来没有好好想过这个问题。
+						记笔记的目的，大致可以归纳为四点：...</p>
+				</div>
+				<img src="images/articlepic3.png">
+			</div>
+			<div class="articlelabel">
+				<h2>玲珑坊</h2>
+				<h5>一 漫天的大火熊熊燃烧。火光把漆黑的夜照的明亮，天边漫延着似鲜血般火红的颜色。 天边渐渐地透露出白色的亮光，新的一天又开始了。 玲珑坊的大门缓缓...</p>
 
-                </div>
-            </div>
-        </header>
-        <article class="main"><!--中央主要文章区-->
-            <div class="slideshow"><!--轮播图预留-->
-                <div class="wrap" style="left:-600px;">
-                    <img src="images/lunbo003.jpg" alt="">
-                    <img src="images/lunbo001.jpg" alt="">
-                    <img src="images/lunbo002.png" alt="">
-                    <img src="images/lunbo003.jpg" alt="">
-                    <img src="images/lunbo001.jpg" alt="">
-                </div>
-                <div class="buttons">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                </div>
-                <div class="arrow arrow_left" id="arrowleft"><</div>
-                <div class="arrow arrow_right" id="arrowright">></div>
-            </div>
-            <!--文章模块-->
-            <div class="articlelabel">
-                <h2>2019最虐心伤感的爱情句子，刺心入骨</h2>
-                <h5>1.你从不拒绝我也不让我离开，又不叫我留下来，你仗着我爱你，你还想怎样，
-                你说谎瞒不过我，你诚实我又难过，进退两难。 2.成熟不是为了走向复杂，....</p>
-            </div>
-            <div class="articlelabel">
-                <div class="articleword">
-                    <h2>面粉就爱这么吃，不揉面不发面，做法特简单，每周必吃2次才解馋</h2>
-                    <p>自从来到南方，虽然吃面食越来越少，但是每次嘴馋也能自己做上一回，吃个痛快。
-                    我家的孩子就特别的喜欢吃这个，每周必吃两回，如果你想一天赚几千几百，下...</p>
-                </div>
-                <img src="images/articlepic.jpg"> 
-            </div>
-            <div class="articlelabel">
-                <div class="articleword">
-                    <h2>4款非常黑科技的APP，各个都很良心，请大家低调使用</h2>
-                    <p>手机是大家经常使用的工具，特别是安卓手机可玩性非常高，今天分享4款非常黑科技的APP，
-                        各个都很良心，请大家一定要低调使用。 1、Gif 助手 G...</p>
-                </div>
-                <img src="images/articlepic2.jpg">
-            </div>
-            <div class="articlelabel">
-                <div class="articleword">
-                    <h2>如何做笔记？</h2>
-                    <p>为什么要记笔记？记了很多年的笔记，从来没有好好想过这个问题。
-                        记笔记的目的，大致可以归纳为四点：...</p>
-                </div>
-                <img src="images/articlepic3.png">
-            </div>
-            <div class="articlelabel">
-              <h2>玲珑坊</h2>
-              <h5>一 漫天的大火熊熊燃烧。火光把漆黑的夜照的明亮，天边漫延着似鲜血般火红的颜色。 天边渐渐地透露出白色的亮光，新的一天又开始了。 玲珑坊的大门缓缓...</p>
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>springboot 集成spring security实现权限管理</h2>
+					<p>spring security介绍 Spring Security是一个功能强大且可高度自定义的身份验证和访问控制框架。它是保护基于Spring...</p>
+				</div>
+				<img src="images/articlepic4.png">
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>还是公众号赚钱法，傻瓜式操作，一个月也能挣小几千。</h2>
+					<p>公众号项目写了一系列，依旧有人后台留言求方法，因为有的操作确实有难度，对于一些新手朋友来讲，很难实现。 今天呢，这个公众号项目，我认为没有任何难...</p>
+				</div>
+				<img src="images/articlepic5.jpg">
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>聊天时，这样称呼你的女人，说明她对你有兴趣</h2>
+					<p>图/网络（如有侵权请联系删除） 原创文章，抄袭必究 01 爱情，从来都不是一个人的死磕到底，往往是两个人的相互交流。 爱情，说白了其实就是两个人...</p>
+				</div>
+				<img src="images/articlepic6.jpg">
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>全球超级计算机排行，强大算力都用来干啥了？</h2>
+					<p>超级计算机是目前地球上计算能力最强的电脑。不同于普通的个人计算机，
+						超级计算机的终极比拼指标只要一个就是计算能力。根据2018年的11月份公布的全...</p>
+				</div>
+				<img src="images/articlepic7.jpg">
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>这些天，我做过的文章兼职</h2>
+					<p>简书已经有接近一个月没有更新了！ 我来简书的理由，真的很简单
+						，只是想靠文字来提高自己的收入，如果没有，也可以记录一下自己的生活。 但我想靠此挣钱...</p>
+				</div>
+				<img src="images/articlepic8.jpg">
+			</div>
+			<div class="articlelabel">
+				<div class="articleword">
+					<h2>2019年网页设计趋势前瞻，先睹为快！</h2>
+					<p>追随最新的网页设计趋势，紧跟设计潮流是设计师们必做的功课之一。
+						快速更迭的网页设计趋势和网页开发技术对2019年的网页设计趋势来说必将产生直接的影...</p>
+				</div>
+				<img src="images/articlepic9.png">
+			</div>
 
-            </div>
-            <div class="articlelabel">
-                <div class="articleword">
-                    <h2>springboot 集成spring security实现权限管理</h2>
-                    <p>spring security介绍 Spring Security是一个功能强大且可高度自定义的身份验证和访问控制框架。它是保护基于Spring...</p>
-                </div>
-                <img src="images/articlepic4.png">
-            </div>
-            <div class="articlelabel">
-                <div class="articleword">
-                    <h2>还是公众号赚钱法，傻瓜式操作，一个月也能挣小几千。</h2>
-                    <p>公众号项目写了一系列，依旧有人后台留言求方法，因为有的操作确实有难度，对于一些新手朋友来讲，很难实现。 今天呢，这个公众号项目，我认为没有任何难...</p>
-                </div>
-                <img src="images/articlepic5.jpg">
-            </div>
-            <div class="articlelabel">
-                <div class="articleword">
-                    <h2>聊天时，这样称呼你的女人，说明她对你有兴趣</h2>
-                    <p>图/网络（如有侵权请联系删除） 原创文章，抄袭必究 01 爱情，从来都不是一个人的死磕到底，往往是两个人的相互交流。 爱情，说白了其实就是两个人...</p>
-                </div>
-                <img src="images/articlepic6.jpg">
-            </div>
-            <div class="articlelabel">
-                <div class="articleword">
-                    <h2>全球超级计算机排行，强大算力都用来干啥了？</h2>
-                    <p>超级计算机是目前地球上计算能力最强的电脑。不同于普通的个人计算机，
-                    超级计算机的终极比拼指标只要一个就是计算能力。根据2018年的11月份公布的全...</p>
-                </div>
-                <img src="images/articlepic7.jpg"> 
-            </div>
-            <div class="articlelabel">
-                <div class="articleword">
-                    <h2>这些天，我做过的文章兼职</h2>
-                    <p>简书已经有接近一个月没有更新了！ 我来简书的理由，真的很简单
-                    ，只是想靠文字来提高自己的收入，如果没有，也可以记录一下自己的生活。 但我想靠此挣钱...</p>
-                </div>
-                <img src="images/articlepic8.jpg">
+		</article>
+		<aside class="aside1"></aside>
+		<!--左侧边栏空白-->
+		<aside class="aside2">
+			<!--链接与广告区-->
+			<div class="pagelink">
+				<!--各类链接-->
+				<img src="images/nagbar001.png">
+				<img src="images/nagbar002.png">
+				<img src="images/nagbar003.png">
+				<img src="images/nagbar004.png">
+				<img src="images/nagbar005.png">
+				<img src="images/nagbar006.png">
+			</div>
+			<div class="qrlink">
+				<!--二维码链接-->
+				<img src="images/qr.png">
+				<h3>下载简书手机app ></h3>
+				<p>随时随地发现和创作内容</p>
 
-            </div>
-    
-        </article>
-        <aside class="aside1"></aside> <!--左侧边栏空白-->
-        <aside class="aside2"><!--链接与广告区-->
-            <div class="pagelink"><!--各类链接-->
-                <img src="images/nagbar001.png">
-                <img src="images/nagbar002.png">
-                <img src="images/nagbar003.png">
-                <img src="images/nagbar004.png">
-                <img src="images/nagbar005.png">
-                <img src="images/nagbar006.png">
-            </div>
-            <div class="qrlink"><!--二维码链接-->
-                <img src="images/qr.png">
-                <h3>下载简书手机app ></h3>
-                <p>随时随地发现和创作内容</p>
-                
 
-            </div>
-            <div class="adlink"><!--广告链接-->
-                <img src="images/ad1.jpg">
-            </div>
-            <div class="writerlink"><!--推荐作者链接-->
-                <div><!--第一栏推荐作者与换一批-->
-                    <div class="writertitle">推荐作者</div>
-                    <div class="changetitle">换一批</div>
-                </div>
-                <div><!--推荐作者-->
-                    <div>
-                        <img src="images/writername1.jpeg">
-                        <h4>矢泽妮可</h4>
-                        <h3>+关注</h3>
-                        <p>写了125.8k字 · 66.6k喜欢</p>
-                    </div>
-                    <div>
-                        <img src="images/writername2.jpg">
-                        <h4>夏娜</h4>
-                        <h3>+关注</h3>
-                        <p>写了86.3k字 · 52.3k喜欢</p>
-                    </div>
-                    <div>
-                        <img src="images/writername3.jpg">
-                        <h4>六花与勇太</h4>
-                        <h3>+关注</h3>
-                        <p>写了152.7k字 · 112.7k喜欢</p>
-                    </div>
-                    <div>
-                        <img src="images/writername4.jpeg">
-                        <h4>春日野</h4>
-                        <h3>+关注</h3>
-                        <p>写了52.0k字 · 42.5k喜欢</p>
-                    </div>
-                    <div>
-                        <img src="images/writername5.jpg">
-                        <h4>伟伟</h4>
-                        <h3>+关注</h3>
-                        <p>写了252.4k字 · 421.5k喜欢</p>
-                    </div>
-                </div>
-                <div class="checkallbutton"><!--查看全部按钮-->
-                    查看全部>
-                </div>
+			</div>
+			<div class="adlink">
+				<!--广告链接-->
+				<img src="images/ad1.jpg">
+			</div>
+			<div class="writerlink">
+				<!--推荐作者链接-->
+				<div>
+					<!--第一栏推荐作者与换一批-->
+					<div class="writertitle">推荐作者</div>
+					<div class="changetitle">换一批</div>
+				</div>
+				<div>
+					<!--推荐作者-->
+					<div>
+						<img src="images/writername1.jpeg">
+						<h4>矢泽妮可</h4>
+						<h3>+关注</h3>
+						<p>写了125.8k字 · 66.6k喜欢</p>
+					</div>
+					<div>
+						<img src="images/writername2.jpg">
+						<h4>夏娜</h4>
+						<h3>+关注</h3>
+						<p>写了86.3k字 · 52.3k喜欢</p>
+					</div>
+					<div>
+						<img src="images/writername3.jpg">
+						<h4>六花与勇太</h4>
+						<h3>+关注</h3>
+						<p>写了152.7k字 · 112.7k喜欢</p>
+					</div>
+					<div>
+						<img src="images/writername4.jpeg">
+						<h4>春日野</h4>
+						<h3>+关注</h3>
+						<p>写了52.0k字 · 42.5k喜欢</p>
+					</div>
+					<div>
+						<img src="images/writername5.jpg">
+						<h4>伟伟</h4>
+						<h3>+关注</h3>
+						<p>写了252.4k字 · 421.5k喜欢</p>
+					</div>
+				</div>
+				<div class="checkallbutton">
+					<!--查看全部按钮-->
+					查看全部>
+				</div>
 
-            </div>
-            <div class="adlink"><!--广告链接-->
-                <img src="images/ad1.jpg">
-            </div>
-            
-        </aside>
-        <aside class="aside3"></aside>
-        <footer class="footer">Footer</footer>
-    </div>
-    
+			</div>
+			<div class="adlink">
+				<!--广告链接-->
+				<img src="images/ad1.jpg">
+			</div>
 
+		</aside>
+		<aside class="aside3"></aside>
+		<footer class="footer">Footer</footer>
+	</div>
+
+
+  <script type="text/javascript" src="jianshu.js"> </script>
 </body>
+
 </html>
