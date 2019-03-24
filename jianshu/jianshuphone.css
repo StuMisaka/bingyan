@@ -1,5 +1,6 @@
 body{
   margin: 0px;
+  font-size: 0.5vw;
 }
 
 
@@ -16,7 +17,7 @@ body{
   border-bottom: 0.05vw solid #EEEEE0;
   /*作子元素时的样式*/
   flex:1 1 100% ;
-  height: 5.5vw;
+  height: 12vw;
   /*作父元素时的样式*/
   display: flex;
   flex-flow: row nowrap;
@@ -28,8 +29,10 @@ body{
   color: #FF4040;
   order: 1;
   flex:1 1 25vw;
-  padding-top: 0.7vw;
-  font-size: 3vw;
+  padding-top: 1vw;
+  padding-right: 50vw;
+  font-size: 1.5rem;
+
 }
 .headtitle02{/*标题栏第二格，首页与下载按键*/
   /*作子元素的样式*/
@@ -39,7 +42,8 @@ body{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items:stretch；
+  align-items:stretch;
+  display: none;
 
 }
 .indexbutton{
@@ -121,6 +125,7 @@ cursor: pointer;
   flex-flow:row nowrap;
   justify-content: flex-start;
   align-items: stretch;
+  display: none;
 }
 .blankbox01{
   flex: 1 1 26vw;
@@ -184,7 +189,7 @@ cursor: pointer;
 
 .main{/*最中心轮播图与文章区域*/
   /*作子元素时的样式*/
-  flex:0 0 50vw;
+  flex:0 0 100vw;
   height: 100vw;
   /*作父元素时的样式*/
   display: flex;
@@ -196,12 +201,12 @@ cursor: pointer;
 .slideshow{
   border-bottom: 0.05vw solid #EEEEE0;
   position: relative;
-  margin: 3.5vw 2.5vw 3.5vw 2.5vw;
-  width: 45vw;
+  margin: 3.5vw 5vw 3.5vw 5vw;
+  width: 90vw;
   /*margin:0 auto 0 auto;*/
   overflow: hidden;
   /*作子元素时的样式*/
-  flex:0 0 19.5vw;
+  flex:0 0 39vw;
   z-index: 0;
 }
 .wrap {
@@ -209,21 +214,21 @@ cursor: pointer;
   margin: 0;
   /*background-color: black;*/
   position: absolute;
-  width: 135vw;
-  height: 19.5vw;
+  width: 270vw;
+  height: 39vw;
   z-index: 1;
-  left:-45vw;
+  left:-90vw;
 }
-/*轮播图长45vw，高19.5vw*/
+/*轮播图长90vw，高39vw*/
 .slideshow .wrap img {
   float: left;
-  width: 45vw;
-  height: 19.5vw;
+  width: 90vw;
+  height: 39vw;
 }
 .slideshow .buttons {
   position: absolute;
-  right: 15vw;
-  bottom:2vw;
+  right: 40vw;
+  bottom:5vw;
   width: 10vw;
   height: 1vw;
   z-index: 2;
@@ -270,32 +275,32 @@ cursor: pointer;
 
 
 .articlelabel{
-  flex:0 0 15vw;
+  flex:0 0 45vw;
   margin: 0px 2.5vw 0px 2.5vw;
   border-top: 0.1vw solid #EEEEE0;
 }
 .articleword{
-  width: 31vw;
-  height: 15.1vw;
+  width: 60vw;
+  height: 30vw;
   float: left;
   margin: 0px;
 }
 .articlelabel h2{
-  width: 30vw;
-  font-size: 1.5vw;
+  width: 60vw;
+  font-size: 1.2rem;
   margin:2.5vw 0px 0px 0px;
   text-align: start;
 }
 .articlelabel p{
-  width: 30vw;
-  font-size: 1.2vw;
+  width: 60vw;
+  font-size: 0.8rem;
   color: #CDC5BF;
   font-weight: 300;
   text-align: start;
   margin: 1.4vw 0px 1.4vw 0px;
 }
 .articlelabel h5{
-  font-size: 1.2vw;
+  font-size:0.8rem;
   color: #CDC5BF;
   font-weight: 300;
   text-align: start;
@@ -309,16 +314,17 @@ cursor: pointer;
   margin: 0px ;
 }
 .articlelabel img{
-  width: 12vw;
+  width: 30vw;
   border-radius: 0.3vw;
   float: left;
-  margin: 3vw 0 0 2vw;
+  margin: 8vw 0 0 2vw;
 }
 
 
 .aside1{
   flex:1 1 0.1vw;
   order: 1;
+  display: none;
 }
 .aside2{/*链接广告区*/
   /*作子元素时的样式*/
@@ -329,10 +335,12 @@ cursor: pointer;
   justify-content: flex-start;
   align-items: stretch;
   order: 3;
+  display: none;
 }
 .aside3{
   flex:1 1  0;
   order: 4;
+  display: none;
 }
 .pagelink{
   flex:0 0 36vw;
@@ -449,42 +457,6 @@ cursor: pointer;
 .checkallbutton:hover{
   cursor: pointer;
 }
-
-/*@media all and (min-width:600px){
-  .aside1{
-      flex:1 1 auto;
-  }
-  .aside2{
-      flex:1 1 auto;
-  }
-}*/
-/*@media all and (min-width:600px){
-  .aside1{
-      flex:1 1 0;
-  }
-  .main{
-      flex:0 1 420px;
-  }
-  .aside2{
-      flex:0 1 180px;
-  }
-  .aside3{
-      flex:1 1 0;
-  }
-}*/
-
-/*.aside1{
-  flex:1 1 0px ;
-  order:1;
-}
-.main{
-  flex:0 0 65% ;
-  order:2;
-}
-.aside2{
-  flex:0 0 25% ;
-  order:3;
-}*/
 
 .footer{
   order:5;

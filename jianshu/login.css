@@ -1,0 +1,76 @@
+body{
+  font-size:0.5vw;
+  background-color: #EEEEE0;
+}
+
+.title{
+  color: #FF4040;
+  font-size: 5em;
+  font-weight: 700;
+  margin:4% 0 0 4%;
+}
+.inputfield{
+  background-color: white;
+  width: 20%;
+  height: 50%;
+  border-radius: 3px;
+  margin: 3% 40% 0 40%;
+  padding: 15px 0 0 5px;
+  box-shadow: #CDCDC1 0em 0em 0.1em 0.1em;
+}
+.loginbutton{
+  font-size: 25px;
+  font-weight: 300;
+  color: gray;
+  float: left;
+  margin: 30px 10px 0 120px;
+  color: #FF4040;
+}
+.loginbutton:hover{
+  cursor: pointer;
+}
+.signupbutton{
+  font-size: 25px;
+  font-weight: 300;
+  color: gray;
+  float: left;
+  margin: 30px 0px 0px 10px;
+
+}
+.signupbutton:hover{
+  cursor: pointer;
+}
+.loginform{
+  float: left;
+  margin: 50px 0 0 30px;
+}
+#nameinput{
+  width: 260px;
+  height: 45px;
+  font-size: 15px;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px; 
+}
+#passwordinput{
+  width: 260px;
+  height: 45px;
+  font-size: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#button{
+  height: 40px;
+  width: 260px;
+  border-radius: 20px;
+  color: white;
+  background-color: #1E90FF;
+  margin: 15px 0 0 33px;
+  box-shadow:0 0 0 white;
+}
+#button:hover{
+  cursor: pointer;
+}
+.icon{
+  font-size: 25px;
+  color: gray;
+}
